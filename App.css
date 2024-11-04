@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: white;
+    
+}
+.mainLogo{
+    position: absolute;
+    margin: 2px;
+    left: 0;
+    height: 8vh;
+    width: 200px; 
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .mainLogo{
+    display: none;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Add mobile-specific styling adjustments here */
+}

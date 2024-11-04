@@ -1,0 +1,33 @@
+.scroller-container {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden; /* Hide the overflow to create the scrolling effect */
+  }
+  
+  .scroller-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    animation: scroll 20s linear infinite; /* Controls the speed and smoothness of scrolling */
+  }
+  
+  .logo-container {
+    min-width: 100px;
+    height: 100px;
+    margin-right: 40px; /* Optional spacing between logos */
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

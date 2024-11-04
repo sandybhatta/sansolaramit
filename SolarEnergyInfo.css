@@ -1,0 +1,132 @@
+.solar-container {
+  display: flex;
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  position: relative;
+}
+
+.solar-section {
+ 
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftt {
+  width: 50%;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.rightt {
+  width: 50%;
+  background-color: #000000;
+  color: #fff;
+  position: relative;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.typewriter {
+  
+  line-height: 15px;
+  overflow: hidden;
+  /* white-space: nowrap; */
+}
+.typewriter-sentence{
+  line-height: 35px;
+}
+.custom-cursor {
+  position: absolute;
+  width: 70px;  
+  height: 70px;
+  
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  pointer-events: none;
+
+}
+
+.typewriter-char {
+  display: inline-block;
+  transition: font-size 0.2s ease;
+  cursor: auto;
+}
+.left-heading{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.left-text{
+  text-align: justify;
+  line-height: 35px;
+  white-space: nowrap;
+}
+.right-heading{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  
+  .solar-container {
+    flex-direction: column;
+    height: auto;
+  
+  }
+  .custom-cursor {
+   display: none;
+  
+  }
+  .solar-section {
+ padding: 0px;
+    display: inline-block;
+    white-space: wrap;
+    overflow: auto;
+  }
+  .left-heading{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .right-heading{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .left-text{
+    text-align: center;
+    line-height: 35px;
+    white-space: wrap;
+    margin-bottom: 20px;
+  }
+  .leftt{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .rightt{
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .typewriter-sentence{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Add mobile-specific styling adjustments here */
+}

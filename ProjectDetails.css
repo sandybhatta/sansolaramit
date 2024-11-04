@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .project-details {
+    padding: 50px;
+    background-color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  
+  .project-details h2 {
+    font-size: 6rem;
+    margin-bottom: 30px;
+    color: #ffffffd2;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+
+  
+  .scroll-text {
+    margin-left: 70px;
+  }
+
+  
+  
+  .projects-grid {
+    /* background: #ea0808; */
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0);
+    width: 375px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    
+    font-size: 4rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  
+  .project-card h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f7e306;
+  }
+  
+  .project-card p {
+    font-size: 1.2rem;
+    margin: 0;
+
+  }
+  
+  
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .project-details {
+      height: auto;
+    }
+    .project-details h2 {
+      font-size: 3rem;
+     
+    }
+
+    .scroll-text {
+      margin: 0;
+       animation: none;
+    }
+
+    .projects-grid {
+      height: auto;
+      gap: 20px;
+    }
+    .project-card h3 {
+      font-size: 1.8rem;
+    }
+    
+  }
+
+  @media (max-width: 480px) {
+    /* Add mobile-specific styling adjustments here */
+  }

@@ -1,0 +1,164 @@
+.contact-us-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .contact-text {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  
+  .contact-us-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    color: black;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .google-map {
+    flex: 1;
+    background: red;
+
+  }
+  .google-map .map{
+    width: 100%;
+    height: 100%;
+  }
+  .google-map .btn{
+    
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+  }
+  .google-map h2{
+    display: inline-block;
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translate(-75%,-50%);
+
+    text-align: center;
+    text-decoration: underline;
+    
+  }
+  .contact-links {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .contact-links h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .contact-links li {
+    margin: 0px 5px;
+  }
+  
+  .contact-links a {
+    text-decoration: none;
+    color: #4caf50;
+    font-size: 2rem;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  @media (min-width: 481px) and (max-width: 1024px){
+    .contact-text {
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      
+  
+    }
+    .contact-us-wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 150px;
+      
+    }
+    .contact-form {
+      margin-top: 50px;
+      width: 70%;
+      padding: 20px;
+    }
+    .google-map {
+      flex: none;
+      margin-top: 50px;
+      width: 70%;
+      background: yellow;
+      height: 400px;
+      position: relative;
+  
+    }
+    .google-map h2{
+      display: inline-block;
+      position: absolute;
+      top: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 480px) {
+    /* Add mobile-specific styling adjustments here */
+  }

@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.home-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+
+
+  
+  }
+  
+  .video-container {
+    
+    z-index:1;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-container video {
+    width: 100%;
+    /* height: 100%; */
+   
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  .video-container.left video {
+    animation: slide-left 0.3s forwards;
+  }
+  
+  .video-container.right video {
+    animation: slide-right 0.3s forwards;
+  }
+  
+  @keyframes slide-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .left-side{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 92vh;
+    width: 70px;
+    
+     z-index: 20;
+  }
+  .right-side{
+    position: absolute;
+    top: 0%;
+    right: 0;
+    height: 92vh;
+    width: 70px;
+     z-index: 20;
+  }
+  .control-button {
+  
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #00000097;
+    
+    border: none;
+  }
+  .control-button i{
+  
+    position: absolute;
+    bottom: 50%;
+    right: 10px;
+   font-size: 3rem;
+    color: rgb(255, 247, 247);
+  }
+  .motto-container{
+    width: 300px;
+    text-align: left;
+    z-index: 30;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+  }
+  .motto{
+    display: inline;
+    
+    mix-blend-mode: difference;
+  }
+ /* Tablet Styles */
+ @media (min-width: 481px) and (max-width: 1024px) {
+  .motto{
+    position: absolute;
+    top: 100px;
+    display: inline;
+    text-align: left;
+    z-index: 0;
+  }
+  .home-container {
+       height: 40vh;
+     }
+
+     .left-side  {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      height: 40vh;
+      width: 70px;
+      
+       z-index: 20;
+    }
+    .right-side{
+      position: absolute;
+      top: 0%;
+      right: 0;
+      height: 40vh;
+      width: 70px;
+       z-index: 20;
+    }
+    .control-button {
+      position: absolute;
+      bottom: 0;
+      height: 80%;
+      width: 100%;
+      /* background: #00000097; */
+      border: none;
+     z-index: 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  /* Add mobile-specific styling adjustments here */
+}
